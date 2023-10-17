@@ -29,4 +29,4 @@ gulp.task('watch', function(){
     gulp.watch("src/*.html").on("change", browserSync.reload);
 });
 
-gulp.task('default', gulp.parallel('watch','server', 'styles'));
+gulp.task('default', gulp.parallel('watch', 'server', 'styles'));
