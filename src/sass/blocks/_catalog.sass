@@ -1,0 +1,137 @@
+.catalog
+    text-align: center
+    padding-bottom: 100px
+    &__tabs
+        display: flex
+        justify-content: center
+        margin-top: 70px
+        list-style-type: none
+        margin-bottom: 0
+        padding-left: 0
+    &__tab
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 220px
+        height: 50px
+        border: 2px solid #d0d0d0
+        font-size: 18px
+        font-weight: 500
+        text-transform: uppercase
+        color: #6b6b6b
+        transform: skewX(-25deg)
+        margin: 0 5px
+        cursor: pointer
+        transition: 0.1s all
+        &:hover
+            box-shadow: 3px 3px 20px $main-color
+            border: none
+            border-radius: 10px
+            color: $main-color
+            font-size: 20px
+        div
+            transform: skewX(25deg)
+        &_active
+            background-color: $main-color
+            color: $white
+            border: none
+            &:hover
+                color: $white
+    &__content
+        margin-top: 59px
+        display: none
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        &_active
+            display: flex
+    &-item
+        padding: 20px 20px 26px 20px
+        width: 300px
+        min-height: 440px
+        border: 2px solid #e8e8e8
+        overflow: hidden
+        margin-bottom: 20px
+        &__img
+            display: block
+            margin: 0 auto
+            max-width: 100%
+            height: 200px
+        &__subtitle
+            font-size: 16px
+            margin-top: 20px
+            font-weight: 700
+            color: #0d0d0d
+        &__desc
+            margin-top: 16px
+            font-size: 14px
+            font-weight: 300
+            color: #0d0d0d
+        &__link
+            display: block
+            margin-top: 17px
+            font-size: 14px
+            font-weight: 500
+            text-transform: uppercase
+            color: $main-color
+            &_list
+                text-transform: uppercase
+                position: absolute
+                bottom: -19px
+                left: 46%
+                transform: translateX(-50%)
+                color: $main-color
+                padding: 0
+        hr
+            margin-top: 19px
+            margin-bottom: 21px
+            height: 1px
+            background-color: #e8e8e8
+        &__footer
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin: 0
+        &__discount
+            text-decoration-line: line-through
+            font-size: 14px
+            font-weight: 300
+            color: #555555
+        &__price
+            font-size: 20px
+            font-weight: 700
+            color: #050505
+        &__wrapper
+            display: flex
+            width: calc( 200% + 40px )
+        &__content
+            width: 50%
+            margin-right: 0px
+            transform: translateX(-100%)
+            transition: 0.5s all
+            &_active
+                transform: translateX(0%)
+                margin-right: 20px
+        &__lists
+            width: 50%
+            margin-left: 20px
+            transform: translateX(0%)
+            padding-right: 20px
+            transition: 0.5s all
+            padding-left: 19px
+            padding-right: 22px
+            padding-bottom: 0
+            text-align: left
+            list-style: square
+            li
+                font-size: 14px
+                line-height: 1.2
+                font-weight: 300
+                color: #555555
+                margin-bottom: 20px
+            ::marker
+                color: $main-color
+            &_active
+                transform: translateX(-100%)
+                margin-left: 0px
+
