@@ -52,4 +52,21 @@ $(document).ready(function(){
         $('.overlay, #order').fadeIn();
       })
     });
+
+    function validateForm(form) {
+      $(form).validate({
+        rules: {
+          name: 'required',
+          phone: 'required',
+          email: {
+            required: true,
+            email: true
+          }
+        }
+      });
+    };
+
+  validateForm('#consultation form');
+  validateForm('#order form');
+  validateForm('#consultation-form');
 });
