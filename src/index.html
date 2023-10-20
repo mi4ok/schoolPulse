@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -63,14 +64,14 @@
                         Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!
                     </div>
                     <div class="advantages__icon">
-                        <img src="images/icons/heart.png" alt="">
+                        <img src="images/icons/heart.png" alt="hearth" class="advantages__item">
                         <h3 class="advantages__head-name">
                             Заботимся о здоровье
                         </h3>
                         Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
                     </div>
                     <div class="advantages__icon">
-                        <img src="images/icons/shoe.png" alt="">
+                        <img src="images/icons/shoe.png" alt="" class="advantages__carpet">
                         <h3 class="advantages__head-name">
                             Учим бегать
                         </h3>
@@ -83,23 +84,23 @@
 
     <section class="consultation">
         <div class="container">
-            <h2 class="title title_consultation">
+            <h2 class="title title_consultation wow animate__flipInY" data-wow-duration="1s">
                 Получите бесплатную консультацию по подбору пульсометра
             </h2>
-            <div class="consultation__desc">
+            <div class="consultation__desc wow animate__rotateInDownRight" data-wow-duration="1s">
                 Просто заполните форму заявки<br>
                 и мы перезвоним вам в течении 10 минут
             </div>
-            <form action="#" class="feed-form" id="consultation-form">
+            <form action="#" class="feed-form wow animate__rotateInDownRight" data-wow-duration="1s" id="consultation-form">
                 <input type="text" name="name" placeholder="Ваше имя" required>
                 <input type="tel" name="phone" placeholder="Ваш телефон" required>
                 <input type="email" name="email" placeholder="Ваш E-mail" required>
-                <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
+                <button class="button button_submit wow animate__rotateInDownRight" data-wow-duration="1s">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
         </div>
     </section>
 
-    <section class="carousel">
+    <section class="carousel wow animate__flipInY" data-wow-duration="1s">
         <div class="container">
             <div class="carousel__inner">
                 <div><img src="images/img/Slider1.png" alt="Slider1"></div>
@@ -109,7 +110,7 @@
         </div>
     </section>
 
-    <section class="catalog">
+    <section class="catalog wow animate__flipInY" data-wow-duration="1s">
         <div class="container">
             <h2 class="title title_catalog">Каталог пульсометров</h2>
 
@@ -379,7 +380,7 @@
                 <h2 class="title title_reviews">
                     отзывы клиентов
                 </h2>
-                <div class="reviews__review">
+                <div class="reviews__review wow animate__slideInUp" data-wow-duration="1s">
                     <div class="reviews__round">
                         <img src="images/img/photo_1.png" alt="photo_1" class="reviews__round-image">
                     </div>
@@ -398,7 +399,7 @@
                     
                 </div>
     
-                <div class="reviews__review">
+                <div class="reviews__review wow animate__slideInUp" data-wow-duration="1s">
                     <div class="reviews__round">
                         <img src="images/img/photo_2.png" alt="photo_2" class="reviews__round-image">
                     </div>
@@ -415,7 +416,7 @@
                     
                 </div>
     
-                <div class="reviews__review">
+                <div class="reviews__review wow animate__slideInUp" data-wow-duration="1s">
                     <div class="reviews__round">
                         <img src="images/img/photo_3.png" alt="photo_3" class="reviews__round-image">
                     </div>
@@ -499,6 +500,7 @@
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/localization/messages_ru.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 
 </body>
