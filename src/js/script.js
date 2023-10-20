@@ -75,11 +75,9 @@ $(document).ready(function(){
 
   $('form').submit(function(e) {
     e.preventDefault();
-
   // if(!e(this).valid()) {
   //   return;
   // }
-
     $.ajax({
       type: "POST",
       url: "smart.php",
@@ -91,5 +89,26 @@ $(document).ready(function(){
       $('form').trigger('reset');
     });
     return false;
+  });
+
+  $(window).scroll(function() {
+    if($(this).scrollTop() > 600) {
+      $('.up-arrow').fadeIn();
+    } else {
+      $('.up-arrow').fadeOut();
+    }
+  });
+
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    } // End if
   });
 });
